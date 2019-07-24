@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ffffb3">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="1079dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="600dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="600dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="¿ Como encontro la limpieza de este servicio ?"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnHappy"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnNormal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@mipmap/happy"
+        />
+
+    <ImageView
+        android:id="@+id/btnNormal"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="150dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnSad"
+        app:layout_constraintStart_toEndOf="@+id/btnHappy"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@mipmap/confused"
+        />
+
+    <ImageView
+        android:id="@+id/btnSad"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnNormal"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@mipmap/unhappy"
+
+        />
+
+</android.support.constraint.ConstraintLayout>
